@@ -1,0 +1,7 @@
+address: USER-VIDEO-CREATE
+description: Channel for user video project creation events
+messages:
+ VideoProjectCreated:
+    contentType: application/json
+    payload:
+      $ref: '#/components/schemas/VideoProjectEvent'

@@ -1,0 +1,7 @@
+address: USER-MOCKUP-EXPORT
+description: Channel for user mockup project exporting events
+messages:
+ MockupProjectExported:
+    contentType: application/json
+    payload:
+      $ref: '#/components/schemas/MockupProjectEvent'

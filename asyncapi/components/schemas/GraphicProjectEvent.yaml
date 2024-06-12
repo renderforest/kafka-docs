@@ -1,0 +1,23 @@
+type: object
+properties:
+  userId:
+    type: integer
+  subUserId:
+    type: integer
+  templateId:
+    type: integer
+  projectId:
+    type: integer
+  meta: 
+    type: object
+    properties:
+      screenTags:
+        type: array
+        items:
+          type: string
+      templateTags:
+        type: array
+        items:
+          type: string
+      templateMetaName:
+        type: string

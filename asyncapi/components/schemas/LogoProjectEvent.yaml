@@ -1,0 +1,25 @@
+type: object
+properties:
+  userId:
+    type: integer
+  subUserId:
+    type: integer
+  templateId:
+    type: integer
+  projectId:
+    type: integer
+  meta: 
+    type: object
+    properties:
+      categoriesData:
+        type: array
+        items:
+          type: string
+      tags:
+        type: array
+        items:
+          type: string
+      secondaryTags:
+        type: array
+        items:
+          type: string

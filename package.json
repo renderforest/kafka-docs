@@ -1,0 +1,13 @@
+{
+    "name": "asyncapi-docs",
+    "version": "1.0.0",
+    "description": "Centralized Renderforest Kafka Documentation using AsyncAPI",
+    "scripts": {
+        "merge-docs": "bash scripts/mergeDocuments.sh",
+        "build-html-doc": "bash scripts/buildHtmlDocs.sh",
+        "start": "npm run merge-docs && npm run build-html-doc && node server.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}

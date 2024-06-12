@@ -1,0 +1,7 @@
+address: USER-LOGO-EXPORT
+description: Channel for user logo project exporting events
+messages:
+ LogoProjectExported:
+    contentType: application/json
+    payload:
+      $ref: '#/components/schemas/LogoProjectEvent'

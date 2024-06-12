@@ -1,0 +1,23 @@
+publishGraphicCreate:
+  action: send
+  summary: ProjectEvent send when user create the graphic project
+  channel:
+    $ref: '#/channels/graphic-project-create'
+  messages:
+    - $ref: '#/channels/graphic-project-create/messages/GraphicProjectCreated'
+  tags:
+    - name: renderforest-api
+  x-used-in-service:
+    - service-name: renderforest-api 
+     
+receiveGraphicCreate:
+  action: receive
+  summary: ProjectEvent received when user create the project
+  channel:
+    $ref: '#/channels/graphic-project-create'
+  messages:
+    - $ref: '#/channels/graphic-project-create/messages/GraphicProjectCreated'
+  tags:
+    - name: user-suggestions
+  x-used-in-service:
+    - service-name: user-suggestions  

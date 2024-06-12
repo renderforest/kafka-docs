@@ -1,0 +1,23 @@
+publishWebsiteExport:
+  action: send
+  summary: ProjectEvent send when user export the webiste
+  channel:
+    $ref: '#/channels/website-project-export'
+  messages:
+    - $ref: '#/channels/website-project-export/messages/WebsiteProjectExported'
+  tags:
+    - name: renderforest-api
+  x-used-in-service: 
+    - service-name: renderforest-api 
+     
+receiveWebsiteExport:
+  action: receive
+  summary: ProjectEvent received when user export the website
+  channel:
+    $ref: '#/channels/website-project-export'
+  messages:
+    - $ref: '#/channels/website-project-export/messages/WebsiteProjectExported'
+  tags:
+    - name: user-suggestions
+  x-used-in-service:
+    - service-name: user-suggestions  

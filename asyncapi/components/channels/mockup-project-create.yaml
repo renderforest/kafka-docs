@@ -1,0 +1,7 @@
+address: USER-MOCKUP-CREATE
+description: Channel for user mockup project creating events
+messages:
+ MockupProjectCreated:
+    contentType: application/json
+    payload:
+      $ref: '#/components/schemas/MockupProjectEvent'

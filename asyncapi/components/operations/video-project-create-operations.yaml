@@ -1,0 +1,23 @@
+publishVideoCreate:
+  action: send
+  summary: ProjectEvent send when user create the video project
+  channel:
+    $ref: '#/channels/video-project-create'
+  messages:
+    - $ref: '#/channels/video-project-create/messages/VideoProjectCreated'
+  tags:
+    - name: renderforest-api
+  x-used-in-service:
+    - service-name: renderforest-api 
+     
+receiveVideoCreate:
+  action: receive
+  summary: ProjectEvent received when user create the project
+  channel:
+    $ref: '#/channels/video-project-create'
+  messages:
+    - $ref: '#/channels/video-project-create/messages/VideoProjectCreated'
+  tags:
+    - name: user-suggestions
+  x-used-in-service:
+    - service-name: user-suggestions  

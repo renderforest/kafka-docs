@@ -1,0 +1,23 @@
+publishGraphicExport:
+  action: send
+  summary: ProjectEvent send when user export the graphic project
+  channel:
+    $ref: '#/channels/graphic-project-export'
+  messages:
+    - $ref: '#/channels/graphic-project-export/messages/GraphicProjectExported'
+  tags:
+    - name: renderforest-api
+  x-used-in-service:
+    - service-name: renderforest-api 
+     
+receiveGraphicExport:
+  action: receive
+  summary: ProjectEvent received when user export the project
+  channel:
+    $ref: '#/channels/graphic-project-export'
+  messages:
+    - $ref: '#/channels/graphic-project-export/messages/GraphicProjectExported'
+  tags:
+    - name: user-suggestions
+  x-used-in-service:
+    - service-name: user-suggestions  

@@ -1,0 +1,16 @@
+development:
+  host: kk.local.renderforest.com:9092
+  description: Kafka broker for the local and development environments.
+  protocol: kafka
+  protocolVersion: 1.0.0
+  tags:
+    - name: env:development
+      description: This environment is meant for developers to run their own tests.
+production:
+  host: /********
+  description: Kafka broker for the production and stage environments.
+  protocol: kafka
+  protocolVersion: 1.0.0
+  tags:
+    - name: env:production
+      description: This environment is the live environment available for final users.

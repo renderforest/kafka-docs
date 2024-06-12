@@ -1,0 +1,7 @@
+address: USER-SEARCH
+description: Channel for user search events
+messages:
+ UserSearch:
+    contentType: application/json
+    payload:
+      $ref: '#/components/schemas/UserSearchEvent'

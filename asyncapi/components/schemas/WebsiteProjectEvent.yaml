@@ -1,0 +1,19 @@
+type: object
+properties:
+  userId:
+    type: integer
+  subUserId:
+    type: integer
+  templateId:
+    type: integer
+  projectId:
+    type: integer
+  meta:
+    type: object
+    properties:
+      tags:
+        type: string
+      description:
+        type: string
+      keywords:
+        type: string

@@ -1,0 +1,7 @@
+address: USER-GRAPHIC-EXPORT
+description: Channel for user graphic project exporting events
+messages:
+ GraphicProjectExported:
+    contentType: application/json
+    payload:
+      $ref: '#/components/schemas/GraphicProjectEvent'

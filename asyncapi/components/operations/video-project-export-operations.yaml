@@ -1,0 +1,22 @@
+publishVideoExport:
+  action: send
+  summary: ProjectEvent send when user export the video project
+  channel:
+    $ref: '#/channels/video-project-export'
+  messages:
+    - $ref: '#/channels/video-project-export/messages/VideoProjectExported'
+  tags:
+    - name: renderforest-api
+  x-used-in-service:
+    - service-name: renderforest-api  
+receiveVideoExport:
+  action: receive
+  summary: ProjectEvent received when user export the project
+  channel:
+    $ref: '#/channels/video-project-export'
+  messages:
+    - $ref: '#/channels/video-project-export/messages/VideoProjectExported'
+  tags:
+    - name: user-suggestions
+  x-used-in-service:
+    - service-name: user-suggestions  

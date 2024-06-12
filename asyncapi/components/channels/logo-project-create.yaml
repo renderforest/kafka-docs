@@ -1,0 +1,7 @@
+address: USER-LOGO-CREATE
+description: Channel for user logo project creation events
+messages:
+ LogoProjectCreated:
+    contentType: application/json
+    payload:
+      $ref: '#/components/schemas/LogoProjectEvent'

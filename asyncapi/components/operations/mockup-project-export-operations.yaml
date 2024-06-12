@@ -1,0 +1,23 @@
+publishMockupExport:
+  action: send
+  summary: ProjectEvent send when user export the mockup project
+  channel:
+    $ref: '#/channels/mockup-project-export'
+  messages:
+    - $ref: '#/channels/mockup-project-export/messages/MockupProjectExported'
+  tags:
+    - name: renderforest-api
+  x-used-in-service:
+    - service-name: renderforest-api 
+     
+receiveMockupExport:
+  action: receive
+  summary: ProjectEvent received when user export the project
+  channel:
+    $ref: '#/channels/mockup-project-export'
+  messages:
+    - $ref: '#/channels/mockup-project-export/messages/MockupProjectExported'
+  tags:
+    - name: user-suggestions
+  x-used-in-service:
+    - service-name: user-suggestions  
