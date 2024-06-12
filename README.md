@@ -27,6 +27,9 @@ npm run merge-docs
 
 npm run buil-html-doc
 
+## Run project with one command
+npm run start
+
 ## To Improve
 To contribute on this documentation here are some improvements which can be done:
 * use [asyncapi-react](https://github.com/asyncapi/asyncapi-react) to generating documentation. For now the generation of the documents is done using html-template, but it is preferable to use asyncapi-react. There is an issue on react template, we will start to use it when the issue will be fixed. [Issue 956](https://github.com/asyncapi/asyncapi-react/issues/956)
