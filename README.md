@@ -5,7 +5,7 @@
 This project provides centralized documentation for Kafka topics used across multiple Renderforest microservices using AsyncAPI. It includes both servers, channels, operations, schemas specific documents.
 
 ## Project Structure
-
+```
 kafka-docs/
 ├── asyncapi/
 | ├── servers.yaml # Common servers.
@@ -19,8 +19,6 @@ kafka-docs/
 ├── package.json # Scripts, dependencies.
 └── README.md # Project documentation.
 
-##Naming con
-
 ## Merging AsyncAPI Documents
 
 npm run merge-docs
@@ -28,6 +26,9 @@ npm run merge-docs
 ## Create visualization
 
 npm run buil-html-doc
+
+## Run project with one command
+npm run start
 
 ## To Improve
 To contribute on this documentation here are some improvements which can be done:
