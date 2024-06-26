@@ -1,7 +1,7 @@
 address: USER-VIDEO-EXPORT
-description: Channel for user video project exporting events
+description: Channel for user video project export events
 messages:
- VideoProjectExported:
+ VideoProjectExportedEvent:
     contentType: application/json
     payload:
-      $ref: '#/components/schemas/VideoProjectEvent'
+      $ref: '#/components/schemas/VideoProjectSchema'

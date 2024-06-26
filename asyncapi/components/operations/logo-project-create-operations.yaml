@@ -1,22 +1,22 @@
-publishLogoCreate:
+publishLogoProjectCreate:
   action: send
-  summary: ProjectEvent send when user Export the Logo project
+  summary: Event send when user create the logo project
   channel:
     $ref: '#/channels/logo-project-create'
   messages:
-    - $ref: '#/channels/logo-project-create/messages/LogoProjectCreated'
+    - $ref: '#/channels/logo-project-create/messages/LogoProjectCreatedEvent'
   tags:
-    - name: renderforest-api
+    - name: logo-maker-api
   x-used-in-service:
-    - service-name: renderforest-api 
+    - service-name: logo-maker-api 
      
-receiveLogoCreate:
+receiveLogoProjectCreate:
   action: receive
-  summary: ProjectEvent received when user create the project
+  summary: Event received when user create the logo project
   channel:
     $ref: '#/channels/logo-project-create'
   messages:
-    - $ref: '#/channels/logo-project-create/messages/LogoProjectCreated'
+    - $ref: '#/channels/logo-project-create/messages/LogoProjectCreatedEvent'
   tags:
     - name: user-suggestions
   x-used-in-service:
