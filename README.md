@@ -18,6 +18,8 @@ kafka-docs/
 | ├── buildHtmlDocs.sh # Script to generate HTML page for AsyncAPI document.
 ├── package.json # Scripts, dependencies.
 └── README.md # Project documentation.
+```
+
 
 ## Merging AsyncAPI Documents
 
