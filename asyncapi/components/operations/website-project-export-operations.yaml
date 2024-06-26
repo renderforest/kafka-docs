@@ -1,0 +1,23 @@
+publishWebsiteProjectExport:
+  action: send
+  summary: Event send when user export the webiste project
+  channel:
+    $ref: '#/channels/website-project-export'
+  messages:
+    - $ref: '#/channels/website-project-export/messages/WebsiteProjectExportedEvent'
+  tags:
+    - name: site-maker-api
+  x-used-in-service: 
+    - service-name: site-maker-api
+     
+receiveWebsiteProjectExport:
+  action: receive
+  summary: Event received when user export the website project
+  channel:
+    $ref: '#/channels/website-project-export'
+  messages:
+    - $ref: '#/channels/website-project-export/messages/WebsiteProjectExportedEvent'
+  tags:
+    - name: user-suggestions
+  x-used-in-service:
+    - service-name: user-suggestions  

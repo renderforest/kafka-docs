@@ -1,7 +1,7 @@
 address: USER-WEBSITE-EXPORT
-description: Channel for user Website project exporting events
+description: Channel for user Website project export events
 messages:
-  WebsiteProjectExported:
+  WebsiteProjectExportedEvent:
     contentType: application/json
     payload:
-      $ref: '#/components/schemas/WebsiteProjectEvent'
+      $ref: '#/components/schemas/WebsiteProjectSchema'

@@ -8,16 +8,18 @@ This project provides centralized documentation for Kafka topics used across mul
 
 kafka-docs/
 ├── asyncapi/
-│ ├── servers.yaml # Common servers
-│ ├── components/ # All components which are channels, operations, schemas are inside this directory
-│ ├── components/channels # every file in this folder is about specific channel
-│ ├── components/operations # every file in this folder is about operations which belongs to specific channel
-│ ├── components/schemas # every file in this folder is about one specific schema
+| ├── servers.yaml # Common servers.
+| ├── components/ # All components which are channels, operations, schemas are inside this directory.
+| ├── components/channels # every file in this folder is about specific channel. Use **kebab-case** for file naming and end with **topic** suffix.
+| ├── components/operations # every file in this folder is about operations which belongs to specific channel. Use **kebab-case** for file naming. Start with channel name and end with **operations** suffix. 
+| ├── components/schemas # every file in this folder is about one specific schema. Use **PascalCase** for file naming. 
 ├── scripts/
-│ ├── mergeDocuments.sh # Script to merge AsyncAPI documents
-│ ├── buildHtmlDocs.sh # Script to generate HTML page AsyncAPI document
-├── package.json # scripts
-└── README.md # Project documentation
+| ├── mergeDocuments.sh # Script to merge AsyncAPI documents.
+| ├── buildHtmlDocs.sh # Script to generate HTML page for AsyncAPI document.
+├── package.json # Scripts, dependencies.
+└── README.md # Project documentation.
+
+##Naming con
 
 ## Merging AsyncAPI Documents
 

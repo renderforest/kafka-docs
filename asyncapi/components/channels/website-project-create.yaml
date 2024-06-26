@@ -1,7 +1,7 @@
 address: USER-WEBSITE-CREATE
 description: Channel for user website project creation events
 messages:
-  WebsiteProjectCreated:
+  WebsiteProjectCreatedEvent:
     contentType: application/json
     payload:
-      $ref: '#/components/schemas/WebsiteProjectEvent'
+      $ref: '#/components/schemas/WebsiteProjectSchema'

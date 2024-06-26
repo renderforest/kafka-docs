@@ -1,7 +1,7 @@
 address: USER-GRAPHIC-CREATE
-description: Channel for user graphic project creation events
+description: Channel/ for user graphic project creation events
 messages:
- GraphicProjectCreated:
+ GraphicProjectCreatedEvent:
     contentType: application/json
     payload:
-      $ref: '#/components/schemas/GraphicProjectEvent'
+      $ref: '#/components/schemas/GraphicProjectSchema'

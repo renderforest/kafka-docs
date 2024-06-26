@@ -1,14 +1,11 @@
 publishUserSearch:
   action: send
-  summary: Event send when user do search inside the application
+  summary: Message send when user do search inside the application
   channel:
     $ref: '#/channels/user-search'
   messages:
     - $ref: >-
-        #/channels/user-search/messages/UserSearch
-  # x-used-in-service:
-  #   - service-name: renderforest-api
-  #   - service-name: site-maker-api
+        #/channels/user-search/messages/UserSearchMessage
   tags:
     - name: renderforest-api
     - name: site-maker-api
@@ -17,17 +14,11 @@ publishUserSearch:
 
 receiveUserSearch:
   action: receive
-  summary: Event received when user do search inside the application
+  summary: Message received when user do search inside the application
   channel:
     $ref: '#/channels/user-search'
   messages:
     - $ref: >-
-        #/channels/user-search/messages/UserSearch
-  # x-used-in-service:
-  #   - service-name: renderforest-api
-  #   - service-name: site-maker-api
+        #/channels/user-search/messages/UserSearchMessage
   tags:
-    - name: renderforest-api
-    - name: site-maker-api
-    - name: logo-maker-api
-    - name: graphic-maker-api
+    - name: user-suggestions

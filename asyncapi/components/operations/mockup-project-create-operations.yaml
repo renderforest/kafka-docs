@@ -1,22 +1,22 @@
-publishMockupCreate:
+publishMockupProjectCreate:
   action: send
-  summary: ProjectEvent send when user create the mockup project
+  summary: Event send when user create the mockup project
   channel:
     $ref: '#/channels/mockup-project-create'
   messages:
-    - $ref: '#/channels/mockup-project-create/messages/MockupProjectCreated'
+    - $ref: '#/channels/mockup-project-create/messages/MockupProjectCreatedEvent'
   tags:
-    - name: renderforest-api
+    - name: graphic-maker-api
   x-used-in-service:
-    - service-name: renderforest-api 
+    - service-name: graphic-maker-api
      
-receiveMockupCreate:
+receiveMockupProjectCreate:
   action: receive
-  summary: ProjectEvent received when user create the mockup project
+  summary: Event received when user create the mockup project
   channel:
     $ref: '#/channels/mockup-project-create'
   messages:
-    - $ref: '#/channels/mockup-project-create/messages/MockupProjectCreated'
+    - $ref: '#/channels/mockup-project-create/messages/MockupProjectCreatedEvent'
   tags:
     - name: user-suggestions
   x-used-in-service:

@@ -1,0 +1,23 @@
+publishWebsiteProjectCreate:
+  action: send
+  summary: Event send when user create the webiste project
+  channel:
+    $ref: '#/channels/website-project-create'
+  messages:
+    - $ref: '#/channels/website-project-create/messages/WebsiteProjectCreatedEvent'
+  tags:
+    - name: site-maker-api
+  x-used-in-service: 
+    - service-name: site-maker-api
+     
+receiveWebsiteProjectCreate:
+  action: receive
+  summary: Event received when user create the website project
+  channel:
+    $ref: '#/channels/website-project-create'
+  messages:
+    - $ref: '#/channels/website-project-create/messages/WebsiteProjectCreatedEvent'
+  tags:
+    - name: user-suggestions
+  x-used-in-service:
+    - service-name: user-suggestions  

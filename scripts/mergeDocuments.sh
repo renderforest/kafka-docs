@@ -6,19 +6,10 @@ ASYNCAPI_DIR="asyncapi"
 CENTRAL_ASYNCAPI_FILE="asyncapi/asyncapi.yaml"
 
 # Start the asyncapi.yaml content
-echo "asyncapi: '3.0.0'" > $CENTRAL_ASYNCAPI_FILE
-echo "info:" >> $CENTRAL_ASYNCAPI_FILE
-echo "  title: Renderforest Centralized Kafka Documentation" >> $CENTRAL_ASYNCAPI_FILE
-echo "  version: '1.0.0'" >> $CENTRAL_ASYNCAPI_FILE
-echo "  description: Renderforest centralized documentation for Kafka topics. " >> $CENTRAL_ASYNCAPI_FILE
-echo "  tags:" >> $CENTRAL_ASYNCAPI_FILE
-echo "    - name: github repo" >> $CENTRAL_ASYNCAPI_FILE
-echo "      externalDocs:" >> $CENTRAL_ASYNCAPI_FILE
-echo "        url: https://github.com" >> $CENTRAL_ASYNCAPI_FILE
+cp "$ASYNCAPI_DIR/info.yaml" $CENTRAL_ASYNCAPI_FILE
 echo "" >> $CENTRAL_ASYNCAPI_FILE
 
 # Add servers
-
 echo "servers:" >> $CENTRAL_ASYNCAPI_FILE
 sed 's/^/ /' "$ASYNCAPI_DIR/servers.yaml" >> $CENTRAL_ASYNCAPI_FILE
 echo "" >> $CENTRAL_ASYNCAPI_FILE

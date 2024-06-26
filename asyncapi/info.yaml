@@ -1,0 +1,25 @@
+asyncapi: '3.0.0'
+info:
+  title: Renderforest Centralized Kafka Documentation
+  version: '1.0.0'
+  description: "Renderforest centralized documentation for Kafka topics. 
+      
+## Naming Conventions for Kafka
+      
+**Topics/Channels:** Use PascalCase, snake_case or kebab-case and end string with 'topic' suffix.????. File name should be in the kebab-case.
+      
+      
+**Configurations Format:** Use camelCase for property names.
+
+
+**Messages:** Use Noun-Verb format. In the end add suffix 'event' or 'message' depends it is event or not. In general you can put 'message', e.g. GraphicProjectExportedEvent. 
+
+
+**Operations:** Use 'publish' and 'receive' prefix then continue with channel name. Use camelCase format.
+
+
+**Schemas:** In the end add suffix 'schema'."
+  tags:
+    - name: github repo
+      externalDocs:
+        url: https://github.com/renderforest/kafka-docs
