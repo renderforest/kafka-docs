@@ -23,9 +23,6 @@ kafka-docs/
 ## Install Prerequisites
 
 **yq** - a YAML processor that will help you manipulate YAML files
-**Node.js** >= v18
-**npm**
-
 
 ## Merging AsyncAPI Documents
 
@@ -35,8 +32,10 @@ npm run merge-docs
 
 npm run build-html-doc
 
-## Run project with one command
-npm run start
+## Running the project
+```sh npm i```
+```sh npm run build```
+```sh npm run start```
 
 ## To Improve
 To contribute on this documentation here are some improvements which can be done:

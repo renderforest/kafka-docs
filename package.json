@@ -1,13 +1,23 @@
 {
-    "name": "asyncapi-docs",
-    "version": "1.0.0",
-    "description": "Centralized Renderforest Kafka Documentation using AsyncAPI",
-    "scripts": {
-        "merge-docs": "bash scripts/mergeDocuments.sh",
-        "build-html-doc": "bash scripts/buildHtmlDocs.sh",
-        "start": "npm run merge-docs && npm run build-html-doc && node server.js"
-    },
-    "dependencies": {
-        "express": "^4.19.2"
-    }
+  "name": "asyncapi-docs",
+  "version": "1.0.0",
+  "description": "Centralized Renderforest Kafka Documentation using AsyncAPI",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "scripts": {
+    "merge-docs": "bash ./scripts/mergeDocuments.sh",
+    "build-html-doc": "bash ./scripts/buildHtmlDocs.sh",
+    "build": "npm run merge-docs && npm run build-html-doc",
+    "start": "node ./app.js"
+  },
+  "engines": {
+    "node": "18.17.0",
+    "npm": "9.6.7"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
