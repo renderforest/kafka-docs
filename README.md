@@ -31,9 +31,9 @@ npm run merge-docs
 npm run build-html-doc
 
 ## Running the project
-1) ```sh npm i```
-2) ```sh npm run build```
-3) ```sh npm run start```
+1) ```npm i```
+2) ```npm run build```
+3) ```npm run start```
 
 ## To Improve
 To contribute on this documentation here are some improvements which can be done:
