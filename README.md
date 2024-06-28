@@ -22,14 +22,12 @@ kafka-docs/
 
 ## Install Prerequisites
 
-**yq** - a YAML processor that will help you manipulate YAML files
+**yq** - if application send generation error try to install yq package by "brew" or "apt-get", YQ is a YAML processor that will help you manipulate YAML files.
 
 ## Merging AsyncAPI Documents
-
 npm run merge-docs
 
 ## Create visualization
-
 npm run build-html-doc
 
 ## Running the project
