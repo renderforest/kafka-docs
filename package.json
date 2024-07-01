@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "@asyncapi/cli": "2.0.3",
+    "@asyncapi/generator": "2.0.3",
     "express": "^4.19.2"
   },
   "scripts": {
